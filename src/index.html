@@ -7,47 +7,56 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
   </head>
   <body>
-    <nav class="navbar navbar-expand-lg">
+    <nav id="main-nav" class="navbar navbar-expand-lg ">
         <section id="section-nav" class="container">
             <a class="navbar-brand d-flex align-items-center gap-2" href="#">
-                <img src="/img/vimeo-logo.png" alt="">
+                <img src="./img/vimeo-logo.png" alt="" class="w-25">
             </a>
-            
-
             
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
-            <div class="collapse navbar-collapse " id="navbarNav">
+            <div class="collapse navbar-collapse w-100" id="navbarNav">
                 <ul class="navbar-nav ms-auto  w-100">
-                    <li class="nav-item">
-                        <a class="nav-link text-black" href="#about">Producto</a>
+                    <li class="nav-item rounded overflow-hidden">
+                        <a class="nav-link text-dark" href="#about">
+                            Producto
+                            <i class="ms-lg-2 fa-solid fa-chevron-down"></i>
+                        </a>
                     </li>
-                    <li class="nav-item">
-                        <a class="nav-link text-black" href="#services">Soluciones</a>
+                    <li class="nav-item overflow-hidden rounded">
+                        <a class="nav-link text-dark" href="#services">
+                            Soluciones
+                            <i class="ms-lg-2 fa-solid fa-chevron-down"></i>
+                        </a>
                     </li>
-                    <li class="nav-item">
-                        <a class="nav-link text-black" href="#team">Conocer</a>
+                    <li class="nav-item overflow-hidden rounded">
+                        <a class="nav-link text-dark" href="#team">
+                            Conocer
+                            <i class="ms-lg-2 fa-solid fa-chevron-down"></i>
+                        </a>
                     </li>
-                    <li class="nav-item">
-                        <a class="nav-link text-black" href="#contact">Precio</a>
+                    <li class="nav-item overflow-hidden rounded">
+                        <a class="nav-link text-dark" href="#contact">Precio</a>
                     </li>
-                    <li class="nav-item">
-                        <a class="nav-link text-black" href="#contact">Ver</a>
+                    <li class="nav-item overflow-hidden rounded">
+                        <a class="nav-link text-dark" href="#contact">Ver</a>
                     </li>
                 </ul>
                 
                 <ul class="navbar-nav ms-auto w-auto d-flex align-items-center">
                     <li class="nav-item">
-                        <a href="" class="nav-link text-black">Comunicarse con ventas</a></li>
+                        <a href="" class="nav-link text-dark">Comunicarse con ventas</a></li>
                     <li class="nav-item">
-                        <a href="" class="nav-link text-black">Iniciar Sesión</a></li>
-                    <li class="btn btn-secondary">
-                        <a href="" class="nav-link text-black border">Unirse</a>
+                        <a href="" class="nav-link text-dark">Iniciar Sesión</a></li>
+                    <li class="btn btn-secondary d-flex align-items-center">
+                        <a href="" class="nav-link text-dark border">Unirse</a>
+                        <div class="rounded bg-primary px-3">
+                            <i class="fa-solid fa-arrow-right"></i>
+                        </div>
                     </li>
                 </ul>
             </div>
-
         </section>
     </nav>
             
@@ -58,23 +67,27 @@
             <h1>Haga más con sus videos</h1>
             <p>Conozca la plataforma de video completa que puede transformar su manera de hacer negocios.</p>
             <div class="d-flex border justify-content-center gap-1 mt-4">
-                <button class="btn btn-primary d-flex align-items-center gap-3 py-2">
+                <button class="btn btn-primary d-flex align-items-center gap-3">
                     <span>Ver los Planes</span>
                     <div class="rounded bg-info px-3">
-                        <i class="fa-solid fa-arrow-right-long"></i>
+                        <i class="fa-solid fa-arrow-right"></i>
                     </div>
                 </button>
-                <button class="btn btn-secondary d-flex align-items-center gap-3 py-2">
+                <button class="btn btn-secondary d-flex align-items-center gap-3">
                     <span>Unirse Gratis</span>
                     <div class="rounded bg-white px-3">
-                        <i class="fa-solid fa-arrow-right-long"></i>
+                        <i class="fa-solid fa-arrow-right"></i>
                     </div>
                 </button>
             </div>
-        </div>
-    
-        <!-- <video class="w-full h-auto" preload="metadata" src="https://player.vimeo.com/progressive_redirect/playback/938226648/rendition/1080p/file.mp4?loc=external&amp;signature=b1d907631c774c4dba6d9b4530f6db8ea5be4d9e5225df477b2b16dba0e080fb" data-src="https://player.vimeo.com/progressive_redirect/playback/938226648/rendition/1080p/file.mp4?loc=external&amp;signature=b1d907631c774c4dba6d9b4530f6db8ea5be4d9e5225df477b2b16dba0e080fb" loop="" playsinline="" autoplay="" poster="https://i.vimeocdn.com/custom_asset/21a684b9352e090b70ace38910e58e70" data-airgap-id="69"></video> -->
+        </section>
+    </div>
+
+    <section id="principal-section" class="mt-5 container border text-center">
+
+        <video class="w-50 h-auto mx-auto" preload="metadata" src="https://player.vimeo.com/progressive_redirect/playback/938226648/rendition/1080p/file.mp4?loc=external&amp;signature=b1d907631c774c4dba6d9b4530f6db8ea5be4d9e5225df477b2b16dba0e080fb" data-src="https://player.vimeo.com/progressive_redirect/playback/938226648/rendition/1080p/file.mp4?loc=external&amp;signature=b1d907631c774c4dba6d9b4530f6db8ea5be4d9e5225df477b2b16dba0e080fb" loop=true playsinline="" autoplay=true poster="https://i.vimeocdn.com/custom_asset/21a684b9352e090b70ace38910e58e70" data-airgap-id="73"></video>
     </section>
+    
     <script type="module" src="./js/main.js"></script>
   </body>
 </html>

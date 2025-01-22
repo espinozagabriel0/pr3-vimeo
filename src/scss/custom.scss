@@ -3,20 +3,48 @@
 
 body{
     // background-color: red;
+    // font-size: 18px;
+    // font-family: ABC Repro, Helvetica Neue, Helvetica, Arial, sans-serif;
 }
-rect, svg, g{
-    fill: black !important;
-}
+// rect, svg, g{
+//     fill: black !important;
+// }
 p{
     font-size: 1.25rem;
 }
+// navbar
 section#section-nav{
-    max-width: 100rem;
+    max-width: 95rem;
     margin: 0 auto;
+}
+#main-nav{
+    background-color: rgba(34, 34, 11, 0.055);
+}
+#navbarNav{
+    li:hover{
+        background-color: #DFE4EA;
+    }
+}
+ul li a {
+    font-weight: 500 !important;
 }
 button span{
     font-size: 18px;
 }
-#hero-section h1{
-    font-size: 5.75rem;
+
+
+// hero section
+#hero-section{
+
+    h1{
+        font-size: 5.75rem;
+
+    }
+
+    button {
+        padding: .7rem 1rem;
+        span{
+            font-weight: 500;
+        }
+    }
 }
