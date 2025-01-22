@@ -1,5 +1,5 @@
 
-$primary: red;
+// $primary: red;
 
 body{
     // background-color: red;
@@ -13,6 +13,9 @@ p{
 section#section-nav{
     max-width: 100rem;
     margin: 0 auto;
+}
+button span{
+    font-size: 18px;
 }
 #hero-section h1{
     font-size: 5.75rem;
