@@ -4,10 +4,11 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Vimeo</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
   </head>
   <body>
     <nav class="navbar navbar-expand-lg">
-        <div class="container">
+        <section id="section-nav" class="container">
             <a class="navbar-brand d-flex align-items-center gap-2" href="#">
                 <img src="/img/vimeo-logo.png" alt="">
             </a>
@@ -17,8 +18,8 @@
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
-            <div class="collapse navbar-collapse border" id="navbarNav">
-                <ul class="navbar-nav ms-auto border w-100">
+            <div class="collapse navbar-collapse " id="navbarNav">
+                <ul class="navbar-nav ms-auto  w-100">
                     <li class="nav-item">
                         <a class="nav-link text-black" href="#about">Producto</a>
                     </li>
@@ -36,23 +37,38 @@
                     </li>
                 </ul>
                 
-                <ul class="navbar-nav ms-auto border w-auto d-flex align-items-center">
+                <ul class="navbar-nav ms-auto w-auto d-flex align-items-center">
                     <li class="nav-item">
-                        <a href="" class="nav-link text-black"></a>
-                        Comunicarse con ventas</li>
+                        <a href="" class="nav-link text-black">Comunicarse con ventas</a></li>
                     <li class="nav-item">
-                        <a href="" class="nav-link text-black"></a>
-                        Iniciar Sesión</li>
-                    <li class="nav-item">
-                        <a href="" class="nav-link text-black"></a>
-                        Unirse</li>
+                        <a href="" class="nav-link text-black">Iniciar Sesión</a></li>
+                    <li class="btn btn-secondary">
+                        <a href="" class="nav-link text-black border">Unirse</a>
+                    </li>
                 </ul>
             </div>
 
-        </div>
+        </section>
     </nav>
-
-
+            
+    
+    <section id="hero-section" class="container border text-center">
+        
+        <div>
+            <h1>Haga más con sus videos</h1>
+            <p>Conozca la plataforma de video completa que puede transformar su manera de hacer negocios.</p>
+            <button class="btn btn-primary">
+                <span>Ver los Planes</span>
+                <i class="fa-solid fa-arrow-right-long"></i>
+            </button>
+            <button class="btn btn-secondary">
+                <span>Unirse Gratis</span>
+                <i class="fa-solid fa-arrow-right-long"></i>
+            </button>
+        </div>
+    
+        <!-- <video class="w-full h-auto" preload="metadata" src="https://player.vimeo.com/progressive_redirect/playback/938226648/rendition/1080p/file.mp4?loc=external&amp;signature=b1d907631c774c4dba6d9b4530f6db8ea5be4d9e5225df477b2b16dba0e080fb" data-src="https://player.vimeo.com/progressive_redirect/playback/938226648/rendition/1080p/file.mp4?loc=external&amp;signature=b1d907631c774c4dba6d9b4530f6db8ea5be4d9e5225df477b2b16dba0e080fb" loop="" playsinline="" autoplay="" poster="https://i.vimeocdn.com/custom_asset/21a684b9352e090b70ace38910e58e70" data-airgap-id="69"></video> -->
+    </section>
     <script type="module" src="./js/main.js"></script>
   </body>
 </html>

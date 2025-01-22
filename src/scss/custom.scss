@@ -1,8 +1,19 @@
 
+$primary: red;
 
 body{
     // background-color: red;
 }
 rect, svg, g{
     fill: black !important;
+}
+p{
+    font-size: 1.25rem;
+}
+section#section-nav{
+    max-width: 100rem;
+    margin: 0 auto;
+}
+#hero-section h1{
+    font-size: 5.75rem;
 }
