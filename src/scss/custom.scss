@@ -2,27 +2,53 @@
 // $primary: red;
 
 body{
+    padding-top: 80px;
     // background-color: red;
     // font-size: 18px;
     // font-family: ABC Repro, Helvetica Neue, Helvetica, Arial, sans-serif;
 }
-// rect, svg, g{
-//     fill: black !important;
-// }
 p{
     font-size: 1.25rem;
 }
+
 // navbar
-section#section-nav{
-    max-width: 95rem;
-    margin: 0 auto;
-}
 #main-nav{
-    background-color: rgba(34, 34, 11, 0.055);
+    // background-color: rgba(34, 34, 11, 0.055);
+    background-color: rgba(209, 202, 202, 0.603); 
+
+
+    // position: fixed;
+    // width: 100%;
+
+    section#section-nav{
+        max-width: 95rem;
+        margin: 0 auto;
+
+        img{
+            max-width: 5rem;
+        }
+    }
+}
+li{
+    white-space: nowrap;
+    padding: .5rem;
 }
 #navbarNav{
-    li:hover{
-        background-color: #DFE4EA;
+    .nav-first{
+
+        li{
+            transition: background .2s;
+    
+            i{
+                transition: transform .2s;
+            }
+        }
+        li:hover{
+            background-color: #DFE4EA;
+            i{
+                transform: rotate(180deg);
+            }
+        }
     }
 }
 ul li a {
@@ -31,7 +57,24 @@ ul li a {
 button span{
     font-size: 18px;
 }
+.cta-1, .cta-2{
+    transition: all .3s ease; 
+}
 
+.cta-1:hover{
+    background-color: #00AACF;
+
+    div.bg-info{
+        background-color: #17D5FF !important;
+    }
+}
+.cta-2:hover{
+    background-color: #17D5FF;
+
+    div{
+        background-color: #00AACF !important;
+    }
+}
 
 // hero section
 #hero-section{
@@ -48,3 +91,56 @@ button span{
         }
     }
 }
+
+
+#section-demostracion{
+    background: url('../img/bg1.jpg') no-repeat;
+    background-size: cover;
+    padding: 6.5rem;
+    color: white;
+
+    h2{
+        font-size: 3.125rem;
+    }
+    p{
+        font-size: 1.25rem;
+    }
+}
+
+
+#section-slider{
+    padding: 6.5rem;
+    img{
+        width: 14rem;
+    }
+}
+
+
+#casos-de-uso {
+    .videos {
+        display: flex;
+        // flex-wrap: wrap;
+        justify-content: center;
+        gap: 20px;
+
+        div{
+            flex: 1;
+            transition: all .8s;
+        }
+        div:hover{
+            flex: 3;
+        }
+    }
+    .video-container {
+        max-width: 60rem !important;
+
+        video{
+            width: 100%;
+            object-fit: contain;
+        }
+    }
+
+}
+  
+
+  
