@@ -1,26 +1,14 @@
 
-// $primary: red;
-
 body{
     padding-top: 80px;
-    // background-color: red;
-    // font-size: 18px;
-    // font-family: ABC Repro, Helvetica Neue, Helvetica, Arial, sans-serif;
 }
 p{
     font-size: 1.25rem;
 }
-
 // navbar
 #main-nav{
-    // background-color: rgba(34, 34, 11, 0.055);
-    // background-color: rgba(209, 202, 202, 0.603); 
     background-color: rgba(255, 255, 255, 0.5);
     backdrop-filter: blur(20px);
-
-
-    // position: fixed;
-    // width: 100%;
 
     section#section-nav{
         max-width: 95rem;
@@ -29,6 +17,33 @@ p{
         img{
             max-width: 5rem;
         }
+        .producto-link{
+            transition: display .3s;
+        }
+
+        .producto-link:hover{
+            #submenu-producto{
+                display: block !important;
+                background-color: red;
+            }
+        }
+
+        .soluciones-link:hover{
+            #submenu-soluciones{
+                display: block !important;
+                background-color: red;
+            }
+        }
+
+        .conocer-link:hover{
+            #submenu-conocer{
+                display: block !important;
+                background-color: red;
+            }
+        }	
+
+
+
     }
 }
 li{
@@ -101,23 +116,14 @@ button span{
 #principal-section{
     .laptop-container {
         position: relative;
-        max-width: 75rem;
-        margin: 0 auto;
     }
-    
-    .laptop-image {
-        width: 100%;
-        height: auto;
-        display: block;
-    }
-    
     .laptop-screen {
         position: absolute;
-        left: 0;
-        top: 0;
+        left: 350px;
+        top: 71px;
         object-fit: contain;
+        max-width: 39rem;
     }
-    
 }
 
 
@@ -151,27 +157,52 @@ button span{
     }
 }
 
-
-
-
 #section-slider{
     padding: 6.5rem;
+    background-color: #F1F5F9;
+
     img{
         width: 14rem;
     }
 }
 
+#section-videos{
+    h4{
+        color: #3d4751;
+        font-weight: 400;
+    }
+    h2.section-title{
+        font-size: 72px;
+        text-align: center;
+        max-width: 55rem;
+        margin: 0 auto;
+        font-weight: bold;
+    }
+
+
+    .section-cards > div{
+        border-radius: 1.3rem;
+        overflow:  hidden;
+    }
+
+}
+
 
 #casos-de-uso {
+    h4{
+        color: #3d4751;
+    }
+    h2{
+        font-size: 3.125rem;
+    }
     .videos {
         display: flex;
-        // flex-wrap: wrap;
         justify-content: center;
         gap: 20px;
 
         div{
             flex: 1;
-            transition: all .8s;
+            transition: flex .7s;
         }
         div:hover{
             flex: 3;
@@ -185,6 +216,7 @@ button span{
             object-fit: contain;
         }
     }
+    
 
 }
   
@@ -201,7 +233,7 @@ button span{
         padding: .5rem 0;
         cursor: pointer;
         transition: color .1s;
-        text-wrap: wrap;
+        white-space: normal;
     }
     li:hover{
         color: #17D5FF;
@@ -212,5 +244,9 @@ button span{
     }
     button.cta-2:hover{
         color: #28313A !important;
+    }
+
+    .atencion-text{
+        font-size: 1.1rem;
     }
 }
