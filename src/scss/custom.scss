@@ -53,6 +53,9 @@ li{
         }
     }
 }
+ul li{
+    list-style: none;
+}
 ul li a {
     font-weight: 500 !important;
 }
@@ -186,4 +189,25 @@ button span{
 }
   
 
-  
+  footer{
+    .cta-1{
+        max-width: fit-content;
+    }
+    ul{
+        padding-left: 0;
+    }
+    li{
+        line-height: 0.6;
+        padding: .5rem 0;
+        cursor: pointer;
+        transition: color .1s;
+        text-wrap: wrap;
+    }
+    li:hover{
+        color: #17D5FF;
+    }
+
+    button.cta-2{
+        background-color: #28313A;
+    }
+}
