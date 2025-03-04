@@ -5,77 +5,481 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Vimeo</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <script type="module" crossorigin src="/assets/index-BQqAtGdk.js"></script>
-    <link rel="stylesheet" crossorigin href="/assets/index-CyJ6Bfng.css">
+    <script type="module" crossorigin src="/assets/index-B2TSVJ6j.js"></script>
+    <link rel="stylesheet" crossorigin href="/assets/index-Dyuv_F5c.css">
   </head>
   <body>
-    <nav class="navbar navbar-expand-lg">
+    <nav id="main-nav" class="navbar navbar-expand-lg fixed-top ">
         <section id="section-nav" class="container">
-            <a class="navbar-brand d-flex align-items-center gap-2" href="#">
-                <img src="/img/vimeo-logo.png" alt="">
+            <a class="navbar-brand d-flex align-items-center gap-2 logo" href="#">
+                <img src="/assets/vimeo-logo-Bh5-xreu.png" alt="" class="">
             </a>
-            
-
             
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
-            <div class="collapse navbar-collapse " id="navbarNav">
-                <ul class="navbar-nav ms-auto  w-100">
-                    <li class="nav-item">
-                        <a class="nav-link text-black" href="#about">Producto</a>
+            <div class="collapse navbar-collapse w-100 position-relative" id="navbarNav">
+                <ul class="navbar-nav ms-auto w-100 nav-first">
+                    <li class="nav-item rounded overflow-hidden producto-link">
+                        <a class="nav-link text-dark" href="#about">
+                            Producto
+                            <i class="ms-lg-2 fa-solid fa-chevron-down"></i>
+                        </a>
+                        <div id="submenu-producto" class="position-absolute bottom-0 top-100 p-4 d-none">
+                            <div class="row row-cols-4">
+                                <div class="col">
+                                    <div class="row">
+                                        <h5>Alojamiento y reproductor</h5>
+                                        <ul>
+                                          <li>Reproductor de video</li>
+                                          <li>Alojamiento de videos</li>
+                                        </ul>
+                                    </div>
+                                    <div class="row">
+                                        <h5>Gestión de video</h5>
+                                        <ul>
+                                          <li>Videoteca</li>
+                                          <li>Colaboración</li>
+                                          <li>Seguridad</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="col">
+                                    <div class="row">
+                                        <h5>Creación y edición</h5>
+                                        <ul>
+                                          <li>Grabar</li>
+                                          <li>Editor de videos</li>
+                                          <li>Realizador de videos</li>
+                                        </ul>
+                                    </div>
+                                    <div class="row">
+                                        <h5>Eventos</h5>
+                                        <ul>
+                                          <li>Transmisión en vivo</li>
+                                          <li>Vimeo Venues</li>
+                                          <li>Seminarios web</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="col">
+                                    <div class="row">
+                                        <h5>Monetización de videos</h5>
+                                        <ul>
+                                          <li>OTT</li>
+                                          <li>Video on Demand</li>
+                                        </ul>
+                                    </div>
+                                    <div class="row">
+                                        <h5>Plataforma</h5>
+                                        <ul>
+                                          <li>Vimeo AI</li>
+                                          <li>Análisis</li>
+                                          <li>Móvil</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="col">
+                                    <div class="row">
+                                        <h5>Nuevos lanzamientos</h5>
+                                        <ul>
+                                          <li>Lanzamiento de otoño de 2024</li>
+                                          <li>Lanzamiento del T3 2024</li>
+                                          <li>Lanzamientos del T2 2024</li>
+                                          <li>Lanzamientos del T1 2024</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>  
+                        </div>
                     </li>
-                    <li class="nav-item">
-                        <a class="nav-link text-black" href="#services">Soluciones</a>
+                    <li class="nav-item overflow-hidden rounded soluciones-link">
+                        <a class="nav-link text-dark" href="#services">
+                            Soluciones
+                            <i class="ms-lg-2 fa-solid fa-chevron-down"></i>
+                        </a>
+                        <div id="submenu-soluciones" class="d-none position-absolute bottom-0 top-100 p-4">
+                            <div class="row">
+                                <div class="col">
+                                    <h5>Vimeo para</h5>
+                                    <ul>
+                                        <li>
+                                            Empresas
+                                        </li>
+                                        <li>
+                                            Pequeñas empresas
+                                        </li>
+                                        <li>
+                                            Profesionales creativos
+                                        </li>
+                                        <li>
+                                            Monetización de videos
+                                        </li>
+                                        <li>
+                                            Educadores
+                                        </li>
+
+                                        <li>
+                                            Profesionales del marketing
+                                        </li>
+                                        <li>
+                                            Comunicaciones corporativas
+                                        </li>
+                                        <li>
+                                            Aprendizaje y desarrollo
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="col">
+                                    <h5>Soluciones</h5>
+                                    <ul>
+                                        <li>Vimeo Central</li>
+                                        <li>Vimeo Marketing</li>
+                                        <li>Vimeo OTT</li>
+                                    </ul>
+                                </div>
+                                <div class="col">
+                                    <img src="/assets/submenu-img-soluciones-CZHBQBcv.avif" alt="" class="overflow-hidden">
+                                    <h5>Conozca Vimeo Central</h5>
+                                </div>
+                            </div>
+                        </div>
                     </li>
-                    <li class="nav-item">
-                        <a class="nav-link text-black" href="#team">Conocer</a>
+                    <li class="nav-item overflow-hidden rounded conocer-link">
+                        <a class="nav-link text-dark" href="#team">
+                            Conocer
+                            <i class="ms-lg-2 fa-solid fa-chevron-down"></i>
+                        </a>
+                        <div id="submenu-conocer" class="d-none position-absolute bottom-0 top-100 p-4">
+                            <div class="row">
+                                <div class="col">
+                                    <h5>Resources</h5>
+                                    <ul>
+                                        <li>Historia de los clientes</li>
+                                        <li>Blog</li>
+                                        <li>Eventos y seminarios web</li>
+                                        <li>Guías</li>
+                                        <li>Escuela de video</li>
+                                        <li>Centro de ayuda</li>
+                                    </ul>
+                                </div>
+                                <div class="col">
+                                    <h5>Conectar</h5>
+                                    <ul>
+                                        <li>Comunidad</li>
+                                        <li>Programadores</li>
+                                        <li>Convertirse en socio</li>
+                                        <li>Contratar a un profesional de video</li>
+                                    </ul>
+                                </div>
+                                <div class="col">
+                                    <img src="https://i.vimeocdn.com/custom_asset/d2b064e3e5f8fe7c0490028513ace266?q=80" alt="Ver demostración" title="Ver demostración" aria-hidden="false" class="progressive-image relative w-full h-auto rounded-standard bg-image-background transform-gpu will-change-[object-position]" data-airgap-id="77">
+                                    <h5>Ver demostración</h5>
+                                </div>
+                            </div>
+                        </div>
                     </li>
-                    <li class="nav-item">
-                        <a class="nav-link text-black" href="#contact">Precio</a>
+                    <li class="nav-item overflow-hidden rounded">
+                        <a class="nav-link text-dark" href="#contact">Precio</a>
                     </li>
-                    <li class="nav-item">
-                        <a class="nav-link text-black" href="#contact">Ver</a>
+                    <li class="nav-item overflow-hidden rounded">
+                        <a class="nav-link text-dark" href="#contact">Ver</a>
                     </li>
                 </ul>
                 
-                <ul class="navbar-nav ms-auto w-auto d-flex align-items-center">
-                    <li class="nav-item">
-                        <a href="" class="nav-link text-black">Comunicarse con ventas</a></li>
-                    <li class="nav-item">
-                        <a href="" class="nav-link text-black">Iniciar Sesión</a></li>
-                    <li class="btn btn-secondary">
-                        <a href="" class="nav-link text-black border">Unirse</a>
+                <ul class="navbar-nav ms-auto w-auto d-flex align-items-center gap-3">
+                    <li class="nav-item rounded">
+                        <a href="" class="nav-link text-dark">Comunicarse con ventas</a></li>
+                    <li class="nav-item rounded">
+                        <a href="" class="nav-link text-dark">Iniciar Sesión</a></li>
+                    <li class="btn btn-secondary d-flex align-items-center rounded cta-2">
+                        <a href="" class="nav-link text-dark">Unirse</a>
+                        <div class="rounded bg-primary px-3">
+                            <i class="fa-solid fa-arrow-right"></i>
+                        </div>
                     </li>
                 </ul>
             </div>
-
         </section>
     </nav>
             
     
-    <section id="hero-section" class="container border text-center">
+    <section id="hero-section" class="container text-center">
         
         <div>
             <h1>Haga más con sus videos</h1>
+            
             <p>Conozca la plataforma de video completa que puede transformar su manera de hacer negocios.</p>
-            <div class="d-flex border justify-content-center gap-1 mt-4">
-                <button class="btn btn-primary d-flex align-items-center gap-3 py-2">
+            <div class="d-flex justify-content-center gap-1 mt-4">
+                <button class="btn btn-primary d-flex align-items-center gap-3 cta-1">
                     <span>Ver los Planes</span>
                     <div class="rounded bg-info px-3">
-                        <i class="fa-solid fa-arrow-right-long"></i>
+                        <i class="fa-solid fa-arrow-right"></i>
                     </div>
                 </button>
-                <button class="btn btn-secondary d-flex align-items-center gap-3 py-2">
+                <button class="btn btn-secondary d-flex align-items-center gap-3 cta-2">
                     <span>Unirse Gratis</span>
                     <div class="rounded bg-white px-3">
-                        <i class="fa-solid fa-arrow-right-long"></i>
+                        <i class="fa-solid fa-arrow-right"></i>
                     </div>
                 </button>
             </div>
         </div>
+    </section>
     
-        <!-- <video class="w-full h-auto" preload="metadata" src="https://player.vimeo.com/progressive_redirect/playback/938226648/rendition/1080p/file.mp4?loc=external&amp;signature=b1d907631c774c4dba6d9b4530f6db8ea5be4d9e5225df477b2b16dba0e080fb" data-src="https://player.vimeo.com/progressive_redirect/playback/938226648/rendition/1080p/file.mp4?loc=external&amp;signature=b1d907631c774c4dba6d9b4530f6db8ea5be4d9e5225df477b2b16dba0e080fb" loop="" playsinline="" autoplay="" poster="https://i.vimeocdn.com/custom_asset/21a684b9352e090b70ace38910e58e70" data-airgap-id="69"></video> -->
-    </section>
+    <section id="principal-section" class="mt-5 container text-center">
+        <div class="laptop-container container">
+            <img src="/assets/laptop-DK_qObIZ.avif" alt="Laptop" class="laptop-image" style="max-width: 80rem;">
+            <video class="laptop-screen" preload="metadata" src="https://player.vimeo.com/progressive_redirect/playback/938226648/rendition/1080p/file.mp4?loc=external&amp;signature=b1d907631c774c4dba6d9b4530f6db8ea5be4d9e5225df477b2b16dba0e080fb" loop playsinline autoplay poster="https://i.vimeocdn.com/custom_asset/21a684b9352e090b70ace38910e58e70" data-airgap-id="73"></video>
+        </div>
+    </section>
+    
+
+    <section id="section-demostracion" class="mt-5">
+        <div class="fondo"></div>
+        <div class="container">
+            <h2>Su paquete completo de herramientas de video</h2>
+            <p>Obtenga todo lo que necesita para editar, gestionar y publicar videos impactantes que generen resultados</p>
+            <button class="btn btn-primary d-flex align-items-center gap-3 cta-1 p-3">
+                <span>Solicitar una demostración</span>
+                <div class="rounded bg-info px-3">
+                    <i class="fa-solid fa-arrow-right"></i>
+                </div>
+            </button>
+        </div>
+    </section>
+
+    <section id="section-slider" class="bg-secondary">
+        <div class="container">
+            <h2 class="text-center">La plataforma de confianza de 287 millones de creadores, empresarios y negocios</h2>
+            
+            <div class="d-flex justify-content-center align-items-center gap-5 mt-5">
+                <img src="/assets/deloitte-C3ubeZOW.png" alt="">
+                <img src="/assets/warner-CiFnqgHy.png" alt="">
+                <img src="data:image/png;base64,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" alt="">
+                <img src="/assets/santander-C3HlOjMR.png" alt="">
+                <img src="/assets/zendesk-B4cXJenL.png" alt="">
+            </div>
+        </div>
+    </section>
+    
+
+    <section id="section-videos">
+        <div class="container mt-5">
+            <h4 class="text-center">Las mejores experiencias de video en Internet, en un mismo lugar</h4>
+            <h2 class="text-center section-title">Su plataforma de video impulsada por IA</h2>
+
+            <!-- 3 filas y 2 columnas --> 
+            <div class="d-flex flex-column gap-3 section-cards">
+                <div class="row mt-5 d-flex align-items-center bg-secondary">
+                    <div class="col rounded">
+                        <img src="/assets/aloj-repr-D5Gmef62.jpg" class="img-fluid" alt="">
+                    </div>
+                    <div class="col">
+                        <h2>Alojamiento y reproductor</h2>
+                        <p>Aloje sus videos con nuestro reproductor HD sin anuncios. Dondequiera que los inserte o comparta, su diseño de reproductor personalizado y su marca los acompañarán.</p>
+                        <button class="btn btn-primary rounded py-2 px-4">
+                            <i class="fa-solid fa-arrow-right"></i>
+                        </button>
+                    </div>
+                </div>
+                <div class="row rounded ">
+                    <div class="col">
+                        <img src="/assets/edicion-cdJSbgVQ.avif" class="img-fluid" alt="">
+                        <div class="bg-secondary p-5">
+                            <h2>Creación y edición</h2>
+                            <p>Cree y edite sus videos con nuestras sencillas herramientas. Agregue efectos, texto y más para que sus videos se destaquen.</p>
+                            <button class="btn btn-primary rounded py-2 px-4">
+                                <i class="fa-solid fa-arrow-right"></i>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <img src="/assets/transmisiones-Cyi6LC65.avif" class="img-fluid" alt="">
+                        <div class="bg-secondary p-5">
+                            <h2>Transmisiones en vivo y eventos</h2>
+                            <p>Transmita sus eventos en vivo o alójelos on-demand. Nuestras herramientas le permiten compartir fácilmente su contenido con el resto del mundo.</p>
+                            <button class="btn btn-primary rounded py-2 px-4">
+                                <i class="fa-solid fa-arrow-right"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col">
+                        <img src="/assets/video-BXwsRdux.avif" class="img-fluid" alt="">
+                        <div class="bg-secondary p-5">
+                            <h2>Gestión de video</h2>
+                            <p>Mantenga sus videos organizados y seguros. Nuestras herramientas facilitan la gestión de su videoteca y mantienen su contenido seguro.</p>
+                            <button class="btn btn-primary rounded py-2 px-4">
+                                <i class="fa-solid fa-arrow-right"></i>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <img src="/assets/monetizacion-CK43pxzF.avif" class="img-fluid" alt="">
+                        <div class="bg-secondary p-5">
+                            <h2>Monetización</h2>
+                            <p>Gane dinero con sus videos con nuestras herramientas de monetización. Agregue anuncios, suscripciones y más a sus videos.</p>
+                            <button class="btn btn-primary rounded py-2 px-4">
+                                <i class="fa-solid fa-arrow-right"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <section id="casos-de-uso" class="mt-5">
+        <div class="container">
+          <h4 class="text-center">Casos de uso</h4>
+          <h2 class="text-center">Como utilizan Vimeo los clientes</h2>
+      
+          <div class="videos">
+            <div class="">
+              <div class="video-container rounded-4 overflow-hidden">
+                <video preload="metadata" src="https://player.vimeo.com/video/436960717?h=f5b9927bde&amp;title=0&amp;byline=0&amp;portrait=0&amp;pip=false" loop playsinline poster="https://i.vimeocdn.com/custom_asset/3b519a6d03c716419d34270adc3a7889?w=1408&amp;q=80"></video>
+              </div>
+              <h4>Morgan Cooper</h4>
+              <p class="text-black">Este director destacado, tres veces elegido por el personal, comparte sus cortometrajes profundamente personales e impactantes con Vimeo.</p>
+            </div>
+            <div>
+              <div class="video-container rounded-4 overflow-hidden">
+                <video preload="metadata" src="https://player.vimeo.com/video/764297424?h=04309e89de&amp;title=0&amp;byline=0&amp;portrait=0&amp;pip=false" loop playsinline poster="https://i.vimeocdn.com/custom_asset/3cb41dceafd91acc5f09269d42abff7d?w=1408&amp;q=80"></video>
+              </div>
+              <h4>Vermicular</h4>
+              <p class="text-black">La inversión en video de Vermicular impulsa el alcance global y crea activos de marketing reutilizables.</p>
+            </div>
+            <div>
+              <div class="video-container rounded-4 overflow-hidden">
+                <video class="object-cover h-121.5 md:m-0 w-full max-w-216" preload="metadata" src="https://player.vimeo.com/video/750432905?h=ab55dbe681&amp;title=0&amp;byline=0&amp;portrait=0&amp;pip=false" data-src="https://player.vimeo.com/video/750432905?h=ab55dbe681&amp;title=0&amp;byline=0&amp;portrait=0&amp;pip=false" loop="" playsinline="" poster="https://i.vimeocdn.com/custom_asset/e0dab8beb6c817de5b52637aae31b7c1?w=1408&amp;q=80" data-airgap-id="91"></video>
+              </div>
+              <h4>Stellantis</h4>
+              <p class="text-black">Con 300 000 empleados en todo el mundo, Stellantis confía en Vimeo para su enseñanza virtual basada en video a nivel mundial.</p>
+            </div>
+          </div>
+        </div>
+    </section>
+    <footer id="section-footer" class="mt-5 bg-dark p-5 text-white">
+        <div class="container">
+            <div class="row">
+                <div class="col">
+                    <h2>Probar gratis</h2>
+                    <ul>
+                        <li>Precio</li>
+                        <li>Comunicarse con Ventas</li>
+                        <li>Ver demostraciones</li>
+                        <li class="btn btn-primary d-flex align-items-center rounded cta-1 mt-2">
+                            <a href="" class="nav-link text-dark">Unirse</a>
+                            <div class="rounded bg-info px-3 ms-lg-2">
+                                <i class="fa-solid fa-arrow-right"></i>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col ">
+                    <h4>Atención al cliente 24x7</h4>
+                    <p class="atencion-text">Nuestro equipo de asistencia al cliente está disponible las 24 horas, los 7 días de la semana. Los miembros de Enterprise también tienen acceso a administradores de cuentas especializados y a un ANS de tiempo de actividad garantizado.</p>
+                    <button class="btn text-white p-2 d-flex align-items-center rounded cta-2 mt-2 gap-3 w-50">
+                        <a href="" class="nav-link">Contactar al equipo de asistencia</a>
+                        <div class="rounded bg-dark px-3">
+                            <i class="fa-solid fa-arrow-right"></i>
+                        </div>
+                    </button>
+                </div>
+            </div>
+            <div class="row row-cols-6 mt-5">
+                <div class="col">
+                    <h4>Productos</h4>
+                    <ul>
+                        <li>Reproductor de video</li>
+                        <li>Alojamiento de videos</li>
+                        <li>Editor de videos</li>
+                        <li>Realizador de videos</li>
+                        <li>Grabar</li>
+                        <li>Transmisión en vivo</li>
+                        <li>Vimeo Venues</li>
+                        <li>Seminarios web</li>
+                        <li>Videoteca</li>
+                        <li>Vimeo AI</li>
+                        <li>Colaboración de video</li>
+                        <li>Estadísticas del video</li>
+                        <li>OTT</li>
+                    </ul>
+                </div>
+            
+                <div class="col">
+                    <h4>Funciones</h4>
+                    <ul>
+                        <li>Aplicaciones móviles</li>
+                        <li>Teleprompter</li>
+                        <li>Transcripción de videos</li>
+                        <li>Leyendas automáticas</li>
+                        <li>Herramienta de recorte de videos</li>
+                        <li>Seguridad</li>
+                        <li>Creador de gif</li>
+                        <li>Convertir imagen a video</li>
+                        <li>Traducción de IA</li>
+                    </ul>
+                </div>
+            
+                <div class="col">
+                    <h4>Vimeo para</h4>
+                    <ul>
+                        <li>Empresas</li>
+                        <li>Pequeñas empresas</li>
+                        <li>Profesionales creativos</li>
+                        <li>Educadores</li>
+                        <li>Profesionales del marketing</li>
+                        <li>Comunicaciones corporativas</li>
+                        <li>Aprendizaje y desarrollo</li>
+                        <li>Salud</li>
+                        <li>Venta minorista</li>
+                        <li>Servicios financieros</li>
+                        <li>Tecnología</li>
+                    </ul>
+                </div>
+            
+                <div class="col">
+                    <h4>Soluciones</h4>
+                    <ul>
+                        <li>Vimeo Central</li>
+                        <li>Vimeo Marketing</li>
+                    </ul>
+                </div>
+            
+                <div class="col">
+                    <h4>Recursos</h4>
+                    <ul>
+                        <li>Centro de ayuda</li>
+                        <li>Contactar al equipo de asistencia</li>
+                        <li>Historias de los clientes</li>
+                        <li>Eventos y seminarios web</li>
+                        <li>Blog</li>
+                        <li>Programadores</li>
+                        <li>Directrices</li>
+                        <li>Vimeo Experts</li>
+                        <li>Ver kit multimedia</li>
+                        <li>Centro de integraciones</li>
+                    </ul>
+                </div>
+            
+                <div class="col">
+                    <h4>Empresa</h4>
+                    <ul>
+                        <li>Acerca de Vimeo</li>
+                        <li>Carreras</li>
+                        <li>Cultura</li>
+                        <li>Relaciones con los inversores</li>
+                        <li>Noticias sobre productos</li>
+                        <li>Mapas del sitio</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+
   </body>
 </html>
