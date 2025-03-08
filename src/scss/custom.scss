@@ -142,7 +142,7 @@ button span {
       transform: translateX(0);
     }
 
-    .boton2-gris{
+    .boton2-gris {
       transform: translateX(0);
     }
 
@@ -179,7 +179,9 @@ button span {
 .boton,
 .boton2,
 .boton-gris,
-.boton2-gris {
+.boton2-gris,
+.boton-4,
+.boton4-negro {
   position: absolute;
   width: 100%;
   height: 100%;
@@ -192,15 +194,18 @@ button span {
   background-color: #17d5ff;
 }
 
-.boton-gris{
+.boton-gris {
   background-color: #dfe4ea;
+}
+.boton-4{
+  background-color: #28313a;
 }
 .boton2 {
   background-color: #00aacf;
   transform: translateX(100%);
   transition: transform 0.3s ease-in-out;
 }
-.boton2-gris{
+.boton2-gris {
   background-color: #17d5ff;
   transform: translateX(100%);
   transition: transform 0.3s ease-in-out;
@@ -246,7 +251,7 @@ button span {
   }
 }
 
-.flecha-2{
+.flecha-2 {
   position: absolute;
   height: 25px;
   width: 40px;
@@ -275,13 +280,15 @@ button span {
   }
 }
 
-.flecha-2{
+.flecha-2 {
   background-color: #fafcfd !important;
 }
-.flecha-3{
+.flecha-3 {
   background-color: #17d5ff !important;
 }
-
+.flecha-4{
+  background-color: black !important;
+}
 // hero section
 #hero-section {
   h1 {
@@ -366,40 +373,37 @@ button span {
     overflow: hidden;
   }
 
-
-  .cards-container{
-    
-  }
-
-  .flecha-transicion{
-    margin-top: 1rem;
-    border-radius: 10px;
-    padding: .5rem;
-    max-width: 4rem;
-    background-color: #17d5ff;
-    overflow: hidden;
-    transition: background .4s;
-
-    & i:first-child{
-      transform: translateX(-50px);
-      transition: transform .4s;
+  .cards-container {
+    .flecha-transicion {
+      margin-top: 1rem;
+      border-radius: 10px;
+      padding: 0.5rem;
+      max-width: 4rem;
+      background-color: #17d5ff;
+      overflow: hidden;
+      transition: background 0.4s;
+      
+      & i:first-child {
+        transform: translateX(-50px);
+        transition: transform 0.4s;
+      }
+      & i:last-child {
+        transition: transform 0.4s;
+      }
     }
-    & i:last-child{
-      transition: transform .4s;
-    }
-
     &:hover{
       cursor: pointer;
-      background-color: #00aacf;
+      .flecha-transicion{
+        background-color: #00aacf;
+      }
 
-      & i:first-child{
+      .flecha-transicion i:first-child {
         transform: translateX(15px);
       }
-
-      & i:last-child{
+  
+      .flecha-transicion i:last-child {
         transform: translateX(50px);
       }
-  
     }
   }
 }
