@@ -114,92 +114,174 @@ button span {
 }
 
 // Transicion botones
-.unirse{
-    position: relative;
-    width: 150px;
-    height: 50px;
-    margin: 10px 0 0 0;
-    border-radius: 10px;
-    font-size: 19px;
-    font-weight: bold;
-    cursor: pointer;
-    overflow: hidden;
- }
-.unirse a{
+.unirse {
+  position: relative;
+  width: auto;
+  min-width: 140px;
+  height: 50px;
+  margin: 10px 0 0 0;
+  border-radius: 10px;
+  font-size: 19px;
+  font-weight: 600;
+  cursor: pointer;
+  overflow: hidden;
+  display: inline-flex;
+  align-items: center;
+  padding: 1rem;
+  justify-content: center;
+
+  a {
     text-decoration: none;
-    color: #0A0E12;
-    margin: auto;
- }
-.unirse:hover {
-  .boton2 {
-    transform: translate(0px, 0px);
-    transition: .3s ease;
+    color: #0a0e12;
+    z-index: 3;
+    position: relative;
   }
 
-  .flecha{
-    background-color: #17d5ff;
-    transition: .3s ease;
-    
-  }
-  .flecha i:first-child {
-    transform: translate(50px, -20px);
-    transition: .3s ease;
-  }
+  &:hover {
+    .boton2 {
+      transform: translateX(0);
+    }
 
-  .flecha i:last-child {
-    transform: translate(6px, -20px);
-    transition: .3s ease;
+    .boton2-gris{
+      transform: translateX(0);
+    }
+
+    .flecha {
+      background-color: #17d5ff;
+
+      i {
+        &:first-child {
+          transform: translate(50px, -50%);
+        }
+
+        &:last-child {
+          transform: translate(41px, -50%);
+        }
+      }
+    }
+
+    .flecha-2 {
+      background-color: #00aacf !important;
+
+      i {
+        &:first-child {
+          transform: translate(50px, -50%);
+        }
+
+        &:last-child {
+          transform: translate(41px, -50%);
+        }
+      }
+    }
   }
 }
 
-.boton{
+.boton,
+.boton2,
+.boton-gris,
+.boton2-gris {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  border-radius: inherit;
+}
+
+.boton {
+  background-color: #17d5ff;
+}
+
+.boton-gris{
+  background-color: #dfe4ea;
+}
+.boton2 {
+  background-color: #00aacf;
+  transform: translateX(100%);
+  transition: transform 0.3s ease-in-out;
+}
+.boton2-gris{
+  background-color: #17d5ff;
+  transform: translateX(100%);
+  transition: transform 0.3s ease-in-out;
+}
+
+.botonEnlace {
+  position: relative;
+  z-index: 2;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+  padding-right: 50px;
+}
+
+.flecha {
+  position: absolute;
+  height: 25px;
+  width: 40px;
+  right: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+  border-radius: 3px;
+  background-color: #00aacf;
+  overflow: hidden;
+  transition: background-color 0.3s ease;
+  z-index: 3;
+
+  i {
     position: absolute;
-    width: 150px;
-    height: 50px;
-    background-color: #17d5ff;
-    border-radius: 11px;
- }
- 
- .boton2{
-    position: absolute !important;
-    width: 150px;
-    height: 50px;
-    background-color: #00aacf;
-    border-radius: 11px;
-    transform: translate(150px, 0px);
-    transition: 1s ease-in-out;
- }
- 
- .botonEnlace{
+    top: 50%;
+    transform: translateY(-50%);
+    transition: transform 0.3s ease-in-out;
+
+    &:first-child {
+      left: 10px;
+    }
+
+    &:last-child {
+      left: -30px;
+    }
+  }
+}
+
+.flecha-2{
+  position: absolute;
+  height: 25px;
+  width: 40px;
+  right: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+  border-radius: 3px;
+  background-color: #fafcfd;
+  overflow: hidden;
+  transition: background-color 0.3s ease;
+  z-index: 3;
+
+  i {
     position: absolute;
-    padding: 10px;
-    z-index: 3;
- }
- .flecha{
-    position: absolute;
-    height: 25px;
-    width: 40px;
-    z-index: 3;
-    top: 11px;
-    border-radius: 3px;
-    left: 95px;
-    background-color: #00aacf;
-    overflow: hidden;
-    transition: 1s ease;
-    
- }
- .flecha i:first-child{
-    position: absolute;
-    transform: translate(6px, -20px);
-    transition: 1s ease-in-out;
- }
- 
- .flecha i:last-child{
-    position: absolute;
-    transform: translate(-40px, -20px);
-    transition: 1s ease-in-out;
- }
- 
+    top: 50%;
+    transform: translateY(-50%);
+    transition: transform 0.3s ease-in-out;
+
+    &:first-child {
+      left: 10px;
+    }
+
+    &:last-child {
+      left: -30px;
+    }
+  }
+}
+
+.flecha-2{
+  background-color: #fafcfd !important;
+}
+.flecha-3{
+  background-color: #17d5ff !important;
+}
+
 // hero section
 #hero-section {
   h1 {
@@ -282,6 +364,43 @@ button span {
   .section-cards > div {
     border-radius: 1.3rem;
     overflow: hidden;
+  }
+
+
+  .cards-container{
+    
+  }
+
+  .flecha-transicion{
+    margin-top: 1rem;
+    border-radius: 10px;
+    padding: .5rem;
+    max-width: 4rem;
+    background-color: #17d5ff;
+    overflow: hidden;
+    transition: background .4s;
+
+    & i:first-child{
+      transform: translateX(-50px);
+      transition: transform .4s;
+    }
+    & i:last-child{
+      transition: transform .4s;
+    }
+
+    &:hover{
+      cursor: pointer;
+      background-color: #00aacf;
+
+      & i:first-child{
+        transform: translateX(15px);
+      }
+
+      & i:last-child{
+        transform: translateX(50px);
+      }
+  
+    }
   }
 }
 
