@@ -312,37 +312,53 @@
       </div>
     </section>
 
-    <section id="section-videos">
-      <div class="container mt-5">
-        <h4 class="text-center">
+    <section id="section-videos" class="py-5">
+      <div class="container">
+        <h4 class="text-center mb-3">
           Las mejores experiencias de video en Internet, en un mismo lugar
         </h4>
-        <h2 class="text-center section-title">
+        <h2 class="text-center section-title mb-5">
           Su plataforma de video impulsada por IA
         </h2>
 
-        <!-- 3 filas y 2 columnas -->
-        <div class="d-flex flex-column gap-3 section-cards">
-          <div class="row mt-5 d-flex align-items-center bg-secondary">
-            <div class="col rounded">
-              <img src="./img/aloj-repr.jpg" class="img-fluid" alt="" />
-            </div>
-            <div class="col">
-              <h2>Alojamiento y reproductor</h2>
-              <p>
-                Aloje sus videos con nuestro reproductor HD sin anuncios.
-                Dondequiera que los inserte o comparta, su diseño de reproductor
-                personalizado y su marca los acompañarán.
-              </p>
-              <button class="btn btn-primary rounded py-2 px-4">
-                <i class="fa-solid fa-arrow-right"></i>
-              </button>
+        <div class="row g-4">
+          <!-- Alojamiento y reproductor -->
+          <div class="col-12 mb-4">
+            <div class="row g-0 bg-secondary rounded overflow-hidden">
+              <div class="col-md-6">
+                <img
+                  src="./img/aloj-repr.jpg"
+                  class="img-fluid w-100 h-100 object-fit-cover"
+                  alt="Alojamiento y reproductor"
+                />
+              </div>
+              <div
+                class="col-md-6 p-4 d-flex flex-column justify-content-center"
+              >
+                <h2>Alojamiento y reproductor</h2>
+                <p>
+                  Aloje sus videos con nuestro reproductor HD sin anuncios.
+                  Dondequiera que los inserte o comparta, su diseño de
+                  reproductor personalizado y su marca los acompañarán.
+                </p>
+                <button
+                  class="btn btn-primary rounded py-2 px-4 align-self-start"
+                >
+                  <i class="fa-solid fa-arrow-right"></i>
+                </button>
+              </div>
             </div>
           </div>
-          <div class="row rounded">
-            <div class="col">
-              <img src="./img/edicion.avif" class="img-fluid" alt="" />
-              <div class="bg-secondary p-5">
+
+          <!-- Creación y edición -->
+          <div class="col-md-6 mb-4">
+            <div class="card h-100">
+              <img
+                src="./img/edicion.avif"
+                class="card-img-top"
+                alt="Creación y edición"
+              />
+              <div class="card-body bg-secondary">
                 <h2>Creación y edición</h2>
                 <p>
                   Cree y edite sus videos con nuestras sencillas herramientas.
@@ -353,9 +369,17 @@
                 </button>
               </div>
             </div>
-            <div class="col">
-              <img src="./img/transmisiones.avif" class="img-fluid" alt="" />
-              <div class="bg-secondary p-5">
+          </div>
+
+          <!-- Transmisiones en vivo y eventos -->
+          <div class="col-md-6 mb-4">
+            <div class="card h-100">
+              <img
+                src="./img/transmisiones.avif"
+                class="card-img-top"
+                alt="Transmisiones en vivo y eventos"
+              />
+              <div class="card-body bg-secondary">
                 <h2>Transmisiones en vivo y eventos</h2>
                 <p>
                   Transmita sus eventos en vivo o alójelos on-demand. Nuestras
@@ -368,10 +392,16 @@
               </div>
             </div>
           </div>
-          <div class="row">
-            <div class="col">
-              <img src="./img/video.avif" class="img-fluid" alt="" />
-              <div class="bg-secondary p-5">
+
+          <!-- Gestión de video -->
+          <div class="col-md-6 mb-4">
+            <div class="card h-100">
+              <img
+                src="./img/video.avif"
+                class="card-img-top"
+                alt="Gestión de video"
+              />
+              <div class="card-body bg-secondary">
                 <h2>Gestión de video</h2>
                 <p>
                   Mantenga sus videos organizados y seguros. Nuestras
@@ -383,9 +413,17 @@
                 </button>
               </div>
             </div>
-            <div class="col">
-              <img src="./img/monetizacion.avif" class="img-fluid" alt="" />
-              <div class="bg-secondary p-5">
+          </div>
+
+          <!-- Monetización -->
+          <div class="col-md-6 mb-4">
+            <div class="card h-100">
+              <img
+                src="./img/monetizacion.avif"
+                class="card-img-top"
+                alt="Monetización"
+              />
+              <div class="card-body bg-secondary">
                 <h2>Monetización</h2>
                 <p>
                   Gane dinero con sus videos con nuestras herramientas de
@@ -409,7 +447,7 @@
 
         <div class="videos">
           <div class="">
-            <div class="video-container rounded-4 overflow-hidden">
+            <div class="video-container rounded-4 overflow-hidden bg-danger">
               <video
                 preload="metadata"
                 src="https://player.vimeo.com/video/436960717?h=f5b9927bde&amp;title=0&amp;byline=0&amp;portrait=0&amp;pip=false"
@@ -465,10 +503,10 @@
     </section>
     <footer id="section-footer" class="mt-5 bg-dark p-5 text-white">
       <div class="container">
-        <div class="row">
-          <div class="col">
+        <div class="row row-cols-1 row-cols-md-2">
+          <div class="col mb-4 mb-md-0">
             <h2>Probar gratis</h2>
-            <ul>
+            <ul class="list-unstyled">
               <li>Precio</li>
               <li>Comunicarse con Ventas</li>
               <li>Ver demostraciones</li>
@@ -491,7 +529,7 @@
               ANS de tiempo de actividad garantizado.
             </p>
             <button
-              class="btn text-white p-2 d-flex align-items-center rounded cta-2 mt-2 gap-3 w-50"
+              class="btn text-white p-2 d-flex align-items-center rounded cta-2 mt-2 gap-3"
             >
               <a href="" class="nav-link">Contactar al equipo de asistencia</a>
               <div class="rounded bg-dark px-3">
@@ -500,10 +538,12 @@
             </button>
           </div>
         </div>
-        <div class="row row-cols-6 mt-5">
-          <div class="col">
+        <div
+          class="row row-cols-2 row-cols-sm-3 row-cols-md-4 row-cols-lg-6 mt-5"
+        >
+          <div class="col mb-4">
             <h4>Productos</h4>
-            <ul>
+            <ul class="list-unstyled">
               <li>Reproductor de video</li>
               <li>Alojamiento de videos</li>
               <li>Editor de videos</li>
@@ -520,9 +560,9 @@
             </ul>
           </div>
 
-          <div class="col">
+          <div class="col mb-4">
             <h4>Funciones</h4>
-            <ul>
+            <ul class="list-unstyled">
               <li>Aplicaciones móviles</li>
               <li>Teleprompter</li>
               <li>Transcripción de videos</li>
@@ -535,9 +575,9 @@
             </ul>
           </div>
 
-          <div class="col">
+          <div class="col mb-4">
             <h4>Vimeo para</h4>
-            <ul>
+            <ul class="list-unstyled">
               <li>Empresas</li>
               <li>Pequeñas empresas</li>
               <li>Profesionales creativos</li>
@@ -552,17 +592,17 @@
             </ul>
           </div>
 
-          <div class="col">
+          <div class="col mb-4">
             <h4>Soluciones</h4>
-            <ul>
+            <ul class="list-unstyled">
               <li>Vimeo Central</li>
               <li>Vimeo Marketing</li>
             </ul>
           </div>
 
-          <div class="col">
+          <div class="col mb-4">
             <h4>Recursos</h4>
-            <ul>
+            <ul class="list-unstyled">
               <li>Centro de ayuda</li>
               <li>Contactar al equipo de asistencia</li>
               <li>Historias de los clientes</li>
@@ -576,9 +616,9 @@
             </ul>
           </div>
 
-          <div class="col">
+          <div class="col mb-4">
             <h4>Empresa</h4>
-            <ul>
+            <ul class="list-unstyled">
               <li>Acerca de Vimeo</li>
               <li>Carreras</li>
               <li>Cultura</li>
@@ -589,15 +629,67 @@
           </div>
         </div>
 
-        <div class="row">
-            <div class="col">
-                <div class="d-flex align-items-center">
-                    
+        <div class="row mt-5">
+          <div class="col-12 col-md-6 mb-4 mb-md-0">
+            <div class="d-flex flex-wrap align-items-center gap-5">
+              <i class="fa-brands fa-instagram fa-2x"></i>
+              <i class="fa-brands fa-x-twitter fa-2x"></i>
+              <i class="fa-brands fa-facebook fa-2x"></i>
+              <i class="fa-brands fa-linkedin fa-2x"></i>
+
+              <div class="d-flex align-items-center gap-3">
+                <span class="language">Idioma</span>
+                <div class="dropdown">
+                  <button
+                    class="btn dropdown-toggle text-light"
+                    type="button"
+                    id="dropdownMenuButton"
+                    data-bs-toggle="dropdown"
+                    aria-haspopup="true"
+                    aria-expanded="false"
+                  >
+                    Español
+                  </button>
+                  <div
+                    class="dropdown-menu"
+                    aria-labelledby="dropdownMenuButton"
+                  >
+                    <a class="dropdown-item text-light" href="#">English</a>
+                    <a class="dropdown-item text-light" href="#">Español</a>
+                    <a class="dropdown-item text-light" href="#">Deutsch</a>
+                    <a class="dropdown-item text-light" href="#">Français</a>
+                    <a class="dropdown-item text-light" href="#">日本語</a>
+                    <a class="dropdown-item text-light" href="#">Português</a>
+                    <a class="dropdown-item text-light" href="#">한국어</a>
+                  </div>
                 </div>
+              </div>
             </div>
-            <div class="col">
-                a
+          </div>
+          <div class="col-12 col-md-6">
+            <div class="d-flex flex-column gap-1">
+              <span>© 2025 Vimeo.com, Inc. Todos los derechos reservados.</span>
+              <ul
+                style="
+                  display: flex;
+                  flex-wrap: wrap;
+                  list-style: none;
+                  padding: 0;
+                  margin: 0;
+                "
+              >
+                <li class="me-2">Condiciones</li>
+                <li class="mx-2">|</li>
+                <li class="mx-2">Privacidad</li>
+                <li class="mx-2">|</li>
+                <li class="mx-2">Privacidad de los estados de EE. UU.</li>
+                <li class="mx-2">|</li>
+                <li class="mx-2">Derechos de autor</li>
+                <li class="mx-2">|</li>
+                <li class="ms-2">Cookies</li>
+              </ul>
             </div>
+          </div>
         </div>
       </div>
     </footer>
