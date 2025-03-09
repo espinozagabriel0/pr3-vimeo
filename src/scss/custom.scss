@@ -176,6 +176,32 @@ button span {
   }
 }
 
+.unirse-2{
+  a{
+    color: #dfe4ea;
+  }
+
+  .flecha-4{
+    transition: all .2s;
+  }
+
+  &:hover{
+
+    .flecha-4{
+      color: #0a0e12;
+      background-color: #00aacf !important;
+    }
+    .boton-4{
+      transform: translateX(0);
+    }
+    .boton4-negro{
+      transform: translateX(0);
+    }
+
+  }
+}
+
+
 .boton,
 .boton2,
 .boton-gris,
@@ -207,6 +233,11 @@ button span {
 }
 .boton2-gris {
   background-color: #17d5ff;
+  transform: translateX(100%);
+  transition: transform 0.3s ease-in-out;
+}
+.boton4-negro{
+  background-color: #17d5ff !important;
   transform: translateX(100%);
   transition: transform 0.3s ease-in-out;
 }
@@ -306,6 +337,7 @@ button span {
 #principal-section {
   .laptop-container {
     position: relative;
+    overflow: hidden;
   }
   .laptop-screen {
     position: absolute;
