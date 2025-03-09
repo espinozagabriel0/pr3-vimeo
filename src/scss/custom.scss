@@ -378,9 +378,44 @@ button span {
   }
 }
 
+
 #section-slider {
   padding: 6.5rem;
   background-color: #f1f5f9;
+
+  @keyframes scroll {
+    0% { transform: translateX(0); }
+    100% { transform: translateX(-50%)}
+  }
+
+  .container{
+    position: relative;
+    overflow: hidden;
+    position: relative;
+
+    .borde{
+      position: absolute;
+      height: 100%;
+      width: 200px;
+      z-index: 3;
+    }
+
+    .slider-imagenes{
+      animation: scroll 15s linear infinite;
+    }
+
+    .borde1{
+      top: 0;
+      left: 0;
+      background: linear-gradient(to right, rgba(223, 228, 234, 1), rgba(223, 228, 234, 0));
+    }
+    .borde2{
+      top: 0;
+      right: 0;
+      background: linear-gradient(to left, rgba(223, 228, 234, 1), rgba(223, 228, 234, 0));
+    }
+
+  }
 
   img {
     width: 14rem;
